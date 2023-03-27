@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */; };
+		AD91490329D0DC4300A7B78C /* ApplicationSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */; };
+		AD91490529D0E6DA00A7B78C /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490429D0E6DA00A7B78C /* LoginScreen.swift */; };
+		AD91490729D0E72000A7B78C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490629D0E72000A7B78C /* HomeScreen.swift */; };
 		ADD4671229C54BD400717EDF /* Music_wavesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4671129C54BD400717EDF /* Music_wavesApp.swift */; };
 		ADD4671429C54BD400717EDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4671329C54BD400717EDF /* ContentView.swift */; };
 		ADD4671629C54BD700717EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD4671529C54BD700717EDF /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateViewModel.swift; sourceTree = "<group>"; };
+		AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSwitcher.swift; sourceTree = "<group>"; };
+		AD91490429D0E6DA00A7B78C /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		AD91490629D0E72000A7B78C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		ADD4670E29C54BD400717EDF /* Music_waves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music_waves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD4671129C54BD400717EDF /* Music_wavesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_wavesApp.swift; sourceTree = "<group>"; };
 		ADD4671329C54BD400717EDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,7 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				ADD4671129C54BD400717EDF /* Music_wavesApp.swift */,
+				AD91490429D0E6DA00A7B78C /* LoginScreen.swift */,
 				ADD4671329C54BD400717EDF /* ContentView.swift */,
+				AD91490629D0E72000A7B78C /* HomeScreen.swift */,
+				AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */,
+				AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */,
 				ADD4671529C54BD700717EDF /* Assets.xcassets */,
 				ADD4671729C54BD700717EDF /* Preview Content */,
 			);
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */,
+				AD91490329D0DC4300A7B78C /* ApplicationSwitcher.swift in Sources */,
+				AD91490729D0E72000A7B78C /* HomeScreen.swift in Sources */,
 				ADD4671429C54BD400717EDF /* ContentView.swift in Sources */,
 				ADD4671229C54BD400717EDF /* Music_wavesApp.swift in Sources */,
+				AD91490529D0E6DA00A7B78C /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

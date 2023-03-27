@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct Music_wavesApp: App {
+    
+    @StateObject var userStateViewModel = UserStateViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            
+            NavigationView{
+                ApplicationSwitcher()
+            }
+            .environmentObject(userStateViewModel)
+            .navigationViewStyle(.stack)
+            
         }
     }
 }
