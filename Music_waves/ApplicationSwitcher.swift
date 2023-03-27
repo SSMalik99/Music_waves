@@ -13,7 +13,9 @@ struct ApplicationSwitcher: View {
     @EnvironmentObject var vm: UserStateViewModel
         
         var body: some View {
-            if (vm.isLoggedIn) {
+            
+            
+            if (vm.isLoggedIn || vm.userToken != "N/A") {
                 HomeScreen().environmentObject(vm)
             } else {
                 LoginScreen()
