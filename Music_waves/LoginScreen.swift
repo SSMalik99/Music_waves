@@ -35,9 +35,10 @@ struct LoginScreen: View {
                 )
             }
         }) {
-            Text("Sign In")
-        }
+            Text("Login")
+        }.padding(10).background(Color("DarkMainColor")).foregroundColor(.white).cornerRadius(8)
     }
+    
     
     var body: some View {
         
@@ -45,12 +46,14 @@ struct LoginScreen: View {
             if(vm.isBusy){
                 ProgressView()
             }else{
-                Text("Login Screen").font(.title)
-                EmailInput()
-                PasswordInput()
-                LoginButton()
+                
+//                Text("Login Screen").font(.title)
+                
+                EmailInput().padding(.top,20).padding(.bottom, 20)
+                PasswordInput().padding(.top,20).padding(.bottom, 20)
+                LoginButton().padding(.top,20).padding(.bottom, 20)
             }
-        }.padding()
+        }
         
     }
 }

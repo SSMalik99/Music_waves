@@ -14,13 +14,13 @@ struct Music_wavesApp: App {
     
     var body: some Scene {
         WindowGroup {
-//            ContentView()
             
             NavigationView{
                 ApplicationSwitcher()
             }
             .environmentObject(userStateViewModel)
             .navigationViewStyle(.stack)
+            
             
         }
     }

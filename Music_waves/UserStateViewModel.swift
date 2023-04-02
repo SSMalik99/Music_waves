@@ -11,6 +11,10 @@ enum UserStateError: Error{
     case signInError, signOutError
 }
 
+enum UserRegisterError : Error {
+    case emailExists, passwordError, serverError
+}
+
 @MainActor
 class UserStateViewModel: ObservableObject {
     
@@ -23,6 +27,18 @@ class UserStateViewModel: ObservableObject {
         userToken = UserDefaults.standard.string(forKey: "userToken") ?? "N/A"
     }
     
+    func register(email : String, password: String) async -> Result<Bool, UserRegisterError> {
+        
+        do{
+            try await Task.sleep(nanoseconds:  1_000_000_000)
+            
+            return .success(true)
+            
+        }catch{
+            return .failure(.serverError)
+        }
+        
+    }
     
     func signIn(email: String, password: String) async -> Result<Bool, UserStateError>  {
         isBusy = true
@@ -30,6 +46,8 @@ class UserStateViewModel: ObservableObject {
             try await Task.sleep(nanoseconds:  1_000_000_000)
             isLoggedIn = true
             isBusy = false
+            
+            
             UserDefaults.standard.set("User_is_logged_in", forKey: "userToken")
             return .success(true)
             

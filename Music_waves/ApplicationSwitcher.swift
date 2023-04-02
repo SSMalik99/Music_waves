@@ -18,7 +18,8 @@ struct ApplicationSwitcher: View {
             if (vm.isLoggedIn || vm.userToken != "N/A") {
                 HomeScreen().environmentObject(vm)
             } else {
-                LoginScreen()
+//                LoginScreen()
+                MainScreen()
             }
             
         }

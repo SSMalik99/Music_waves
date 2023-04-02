@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD5BF28A29D308A2002BFEBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD5BF28929D308A2002BFEBF /* GoogleService-Info.plist */; };
+		AD8CE0D629D9132400E37E07 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */; };
+		AD8CE0D829D916CA00E37E07 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8CE0D729D916CA00E37E07 /* MainScreen.swift */; };
 		AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */; };
 		AD91490329D0DC4300A7B78C /* ApplicationSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */; };
 		AD91490529D0E6DA00A7B78C /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490429D0E6DA00A7B78C /* LoginScreen.swift */; };
 		AD91490729D0E72000A7B78C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490629D0E72000A7B78C /* HomeScreen.swift */; };
 		ADD4671229C54BD400717EDF /* Music_wavesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4671129C54BD400717EDF /* Music_wavesApp.swift */; };
-		ADD4671429C54BD400717EDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4671329C54BD400717EDF /* ContentView.swift */; };
 		ADD4671629C54BD700717EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD4671529C54BD700717EDF /* Assets.xcassets */; };
 		ADD4671929C54BD700717EDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD4671829C54BD700717EDF /* Preview Assets.xcassets */; };
 		ADD4672329C54BD700717EDF /* Music_wavesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4672229C54BD700717EDF /* Music_wavesTests.swift */; };
@@ -38,13 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD5BF28929D308A2002BFEBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		AD8CE0D729D916CA00E37E07 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateViewModel.swift; sourceTree = "<group>"; };
 		AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSwitcher.swift; sourceTree = "<group>"; };
 		AD91490429D0E6DA00A7B78C /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		AD91490629D0E72000A7B78C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		ADD4670E29C54BD400717EDF /* Music_waves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music_waves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD4671129C54BD400717EDF /* Music_wavesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_wavesApp.swift; sourceTree = "<group>"; };
-		ADD4671329C54BD400717EDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADD4671529C54BD700717EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADD4671829C54BD700717EDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADD4671E29C54BD700717EDF /* Music_wavesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Music_wavesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,12 +108,14 @@
 			children = (
 				ADD4671129C54BD400717EDF /* Music_wavesApp.swift */,
 				AD91490429D0E6DA00A7B78C /* LoginScreen.swift */,
-				ADD4671329C54BD400717EDF /* ContentView.swift */,
+				AD5BF28929D308A2002BFEBF /* GoogleService-Info.plist */,
 				AD91490629D0E72000A7B78C /* HomeScreen.swift */,
 				AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */,
 				AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */,
 				ADD4671529C54BD700717EDF /* Assets.xcassets */,
 				ADD4671729C54BD700717EDF /* Preview Content */,
+				AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */,
+				AD8CE0D729D916CA00E37E07 /* MainScreen.swift */,
 			);
 			path = Music_waves;
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 			dependencies = (
 			);
 			name = Music_waves;
+			packageProductDependencies = (
+			);
 			productName = Music_waves;
 			productReference = ADD4670E29C54BD400717EDF /* Music_waves.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +235,8 @@
 				Base,
 			);
 			mainGroup = ADD4670529C54BD400717EDF;
+			packageReferences = (
+			);
 			productRefGroup = ADD4670F29C54BD400717EDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -245,6 +255,7 @@
 			files = (
 				ADD4671929C54BD700717EDF /* Preview Assets.xcassets in Resources */,
 				ADD4671629C54BD700717EDF /* Assets.xcassets in Resources */,
+				AD5BF28A29D308A2002BFEBF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8CE0D829D916CA00E37E07 /* MainScreen.swift in Sources */,
 				AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */,
 				AD91490329D0DC4300A7B78C /* ApplicationSwitcher.swift in Sources */,
 				AD91490729D0E72000A7B78C /* HomeScreen.swift in Sources */,
-				ADD4671429C54BD400717EDF /* ContentView.swift in Sources */,
+				AD8CE0D629D9132400E37E07 /* RegisterScreen.swift in Sources */,
 				ADD4671229C54BD400717EDF /* Music_wavesApp.swift in Sources */,
 				AD91490529D0E6DA00A7B78C /* LoginScreen.swift in Sources */,
 			);
