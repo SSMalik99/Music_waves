@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD5BF28A29D308A2002BFEBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD5BF28929D308A2002BFEBF /* GoogleService-Info.plist */; };
 		AD8CE0D629D9132400E37E07 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */; };
 		AD8CE0D829D916CA00E37E07 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8CE0D729D916CA00E37E07 /* MainScreen.swift */; };
 		AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */; };
@@ -20,6 +19,7 @@
 		ADD4672329C54BD700717EDF /* Music_wavesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4672229C54BD700717EDF /* Music_wavesTests.swift */; };
 		ADD4672D29C54BD700717EDF /* Music_wavesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4672C29C54BD700717EDF /* Music_wavesUITests.swift */; };
 		ADD4672F29C54BD700717EDF /* Music_wavesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4672E29C54BD700717EDF /* Music_wavesUITestsLaunchTests.swift */; };
+		ADE5BC0F29DA4FCF00305455 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADE5BC0E29DA4FCF00305455 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AD5BF28929D308A2002BFEBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		AD8CE0D729D916CA00E37E07 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateViewModel.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		ADD4672829C54BD700717EDF /* Music_wavesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Music_wavesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD4672C29C54BD700717EDF /* Music_wavesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_wavesUITests.swift; sourceTree = "<group>"; };
 		ADD4672E29C54BD700717EDF /* Music_wavesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_wavesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ADE5BC0E29DA4FCF00305455 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 			children = (
 				ADD4671129C54BD400717EDF /* Music_wavesApp.swift */,
 				AD91490429D0E6DA00A7B78C /* LoginScreen.swift */,
-				AD5BF28929D308A2002BFEBF /* GoogleService-Info.plist */,
 				AD91490629D0E72000A7B78C /* HomeScreen.swift */,
+				ADE5BC0E29DA4FCF00305455 /* GoogleService-Info.plist */,
 				AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */,
 				AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */,
 				ADD4671529C54BD700717EDF /* Assets.xcassets */,
@@ -255,7 +255,7 @@
 			files = (
 				ADD4671929C54BD700717EDF /* Preview Assets.xcassets in Resources */,
 				ADD4671629C54BD700717EDF /* Assets.xcassets in Resources */,
-				AD5BF28A29D308A2002BFEBF /* GoogleService-Info.plist in Resources */,
+				ADE5BC0F29DA4FCF00305455 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
