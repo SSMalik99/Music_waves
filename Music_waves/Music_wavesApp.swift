@@ -7,10 +7,19 @@
 
 import SwiftUI
 
+import FirebaseFirestore
+import FirebaseAuth
+import Firebase
+
 @main
 struct Music_wavesApp: App {
+    init() {
+        FirebaseApp.configure()
+        
+    }
     
     @StateObject var userStateViewModel = UserStateViewModel()
+    
     
     var body: some Scene {
         WindowGroup {

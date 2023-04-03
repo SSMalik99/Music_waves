@@ -49,8 +49,14 @@ struct LoginScreen: View {
                 
 //                Text("Login Screen").font(.title)
                 
+                
                 EmailInput().padding(.top,20).padding(.bottom, 20)
                 PasswordInput().padding(.top,20).padding(.bottom, 20)
+                
+                if(vm.error != "" ){
+                    Text(vm.error).foregroundColor(.red)
+                }
+                
                 LoginButton().padding(.top,20).padding(.bottom, 20)
             }
         }

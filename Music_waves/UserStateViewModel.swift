@@ -6,55 +6,77 @@
 //
 
 import Foundation
+import Firebase
 
 enum UserStateError: Error{
     case signInError, signOutError
 }
 
 enum UserRegisterError : Error {
-    case emailExists, passwordError, serverError
+    case emailExists, passwordError, serverError, passwordMisMatch
 }
 
 @MainActor
 class UserStateViewModel: ObservableObject {
     
+    
     @Published var isLoggedIn = false
     @Published var isBusy = false
     @Published var userToken = "N/A"
+    @Published var error = ""
     
     
     init (){
         userToken = UserDefaults.standard.string(forKey: "userToken") ?? "N/A"
+//        FirebaseApp.configure()
     }
     
-    func register(email : String, password: String) async -> Result<Bool, UserRegisterError> {
+    func register(email : String, password: String, confirmPassword : String) async -> Result<Bool, UserRegisterError> {
+        
         
         do{
-            try await Task.sleep(nanoseconds:  1_000_000_000)
+            if(confirmPassword != password) {
+                return .failure(.passwordMisMatch)
+            }
+            
+             Auth.auth().createUser(withEmail: email, password: password){ [unowned self] (data, error) in
+                if let error = error {
+                    self.error = error.localizedDescription
+                } else {
+                    
+                    self.isLoggedIn = true
+                    UserDefaults.standard.set("User_is_logged_in", forKey: "userToken")
+                    
+                }
+              }
+//            try await Task.sleep(nanoseconds:  1_000_000_000)
             
             return .success(true)
             
-        }catch{
-            return .failure(.serverError)
         }
+//        catch{
+//            return .failure(.serverError)
+//        }
         
     }
     
     func signIn(email: String, password: String) async -> Result<Bool, UserStateError>  {
         isBusy = true
-        do{
-            try await Task.sleep(nanoseconds:  1_000_000_000)
-            isLoggedIn = true
-            isBusy = false
+        Auth.auth().signIn(withEmail: email, password: password){ [unowned self] (data, error) in
+               if let error = error {
+                   self.error = error.localizedDescription
+                   self.isBusy = false
+                   
+               } else {
+                   
+                   self.isLoggedIn = true
+                   self.isBusy = false
+                   UserDefaults.standard.set("User_is_logged_in", forKey: "userToken")
+                   
+               }
+             }
             
-            
-            UserDefaults.standard.set("User_is_logged_in", forKey: "userToken")
             return .success(true)
-            
-        }catch{
-            isBusy = false
-            return .failure(.signInError)
-        }
     }
     
     func signOut() async -> Result<Bool, UserStateError>  {

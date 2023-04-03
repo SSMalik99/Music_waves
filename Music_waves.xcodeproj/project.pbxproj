@@ -19,7 +19,10 @@
 		ADD4672329C54BD700717EDF /* Music_wavesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4672229C54BD700717EDF /* Music_wavesTests.swift */; };
 		ADD4672D29C54BD700717EDF /* Music_wavesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4672C29C54BD700717EDF /* Music_wavesUITests.swift */; };
 		ADD4672F29C54BD700717EDF /* Music_wavesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4672E29C54BD700717EDF /* Music_wavesUITestsLaunchTests.swift */; };
-		ADE5BC0F29DA4FCF00305455 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADE5BC0E29DA4FCF00305455 /* GoogleService-Info.plist */; };
+		ADE5BC1729DA51B300305455 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADE5BC1629DA51B300305455 /* GoogleService-Info.plist */; };
+		ADE5BC1A29DA5F9100305455 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ADE5BC1929DA5F9100305455 /* FirebaseAuth */; };
+		ADE5BC1C29DA5F9100305455 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ADE5BC1B29DA5F9100305455 /* FirebaseFirestore */; };
+		ADE5BC1E29DA69DD00305455 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE5BC1D29DA69DD00305455 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +58,8 @@
 		ADD4672829C54BD700717EDF /* Music_wavesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Music_wavesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD4672C29C54BD700717EDF /* Music_wavesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_wavesUITests.swift; sourceTree = "<group>"; };
 		ADD4672E29C54BD700717EDF /* Music_wavesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_wavesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		ADE5BC0E29DA4FCF00305455 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADE5BC1629DA51B300305455 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADE5BC1D29DA69DD00305455 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE5BC1A29DA5F9100305455 /* FirebaseAuth in Frameworks */,
+				ADE5BC1C29DA5F9100305455 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,13 +115,14 @@
 				ADD4671129C54BD400717EDF /* Music_wavesApp.swift */,
 				AD91490429D0E6DA00A7B78C /* LoginScreen.swift */,
 				AD91490629D0E72000A7B78C /* HomeScreen.swift */,
-				ADE5BC0E29DA4FCF00305455 /* GoogleService-Info.plist */,
+				ADE5BC1629DA51B300305455 /* GoogleService-Info.plist */,
 				AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */,
 				AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */,
 				ADD4671529C54BD700717EDF /* Assets.xcassets */,
 				ADD4671729C54BD700717EDF /* Preview Content */,
 				AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */,
 				AD8CE0D729D916CA00E37E07 /* MainScreen.swift */,
+				ADE5BC1D29DA69DD00305455 /* LaunchScreen.swift */,
 			);
 			path = Music_waves;
 			sourceTree = "<group>";
@@ -162,6 +169,8 @@
 			);
 			name = Music_waves;
 			packageProductDependencies = (
+				ADE5BC1929DA5F9100305455 /* FirebaseAuth */,
+				ADE5BC1B29DA5F9100305455 /* FirebaseFirestore */,
 			);
 			productName = Music_waves;
 			productReference = ADD4670E29C54BD400717EDF /* Music_waves.app */;
@@ -236,6 +245,7 @@
 			);
 			mainGroup = ADD4670529C54BD400717EDF;
 			packageReferences = (
+				ADE5BC1829DA5F9100305455 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = ADD4670F29C54BD400717EDF /* Products */;
 			projectDirPath = "";
@@ -255,7 +265,7 @@
 			files = (
 				ADD4671929C54BD700717EDF /* Preview Assets.xcassets in Resources */,
 				ADD4671629C54BD700717EDF /* Assets.xcassets in Resources */,
-				ADE5BC0F29DA4FCF00305455 /* GoogleService-Info.plist in Resources */,
+				ADE5BC1729DA51B300305455 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE5BC1E29DA69DD00305455 /* LaunchScreen.swift in Sources */,
 				AD8CE0D829D916CA00E37E07 /* MainScreen.swift in Sources */,
 				AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */,
 				AD91490329D0DC4300A7B78C /* ApplicationSwitcher.swift in Sources */,
@@ -611,6 +622,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADE5BC1829DA5F9100305455 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADE5BC1929DA5F9100305455 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADE5BC1829DA5F9100305455 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ADE5BC1B29DA5F9100305455 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADE5BC1829DA5F9100305455 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADD4670629C54BD400717EDF /* Project object */;
 }

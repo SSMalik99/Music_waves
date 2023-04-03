@@ -16,19 +16,25 @@ struct MainScreen: View {
                 
 //                Horizonatal naviogation
                 HStack(spacing: 125) {
-                    Button("Login") {
-                        self.userRequest = "Login"
-                    }.background(Color("DarkMainColor"))
-                        .foregroundColor(.white)
-                        .font(.system(size: 30))
-                        
-                        
                     
-                    Button("Register") {
-                        self.userRequest = "Register"
-                    }.background(Color("DarkMainColor"))
+                    Button(action: {
+                        self.userRequest = "Login"
+                    }, label: {
+                        Text("Login").padding(10)
+                        
+                    }).background(Color("DarkMainColor"))
                         .foregroundColor(.white)
                         .font(.system(size: 30))
+                        .cornerRadius(20)
+                    
+                    Button(action: {
+                        self.userRequest = "Register"
+                    }, label: {
+                        Text("Register").padding(10)
+                    }).background(Color("DarkMainColor"))
+                        .foregroundColor(.white)
+                        .font(.system(size: 30))
+                        .cornerRadius(20)
                     
                 }.padding(.bottom, 50)
                     .padding(.top, 30)
