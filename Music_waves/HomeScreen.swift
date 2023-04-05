@@ -15,12 +15,30 @@ struct HomeScreen: View {
         
         if(vm.isBusy){
             ProgressView()
+            
         }else{
-            Text("Home Screen")
-                .navigationTitle("Home")
-                .toolbar {
-                   
-                        Button {
+            
+            TabView {
+                Text("Home Tab")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
+             
+                Text("Profile Tab")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .tabItem {
+                        Image(systemName: "person.crop.circle")
+                        Text("Profile")
+                    }
+             
+             
+             
+            }
+            .navigationTitle("Home")
+            .toolbar {
+                   Button {
                             Task{
                                 await vm.signOut()
                             }
