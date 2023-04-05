@@ -8,6 +8,8 @@
 import Foundation
 import Firebase
 
+
+
 enum UserStateError: Error{
     case signInError, signOutError
 }
@@ -19,6 +21,7 @@ enum UserRegisterError : Error {
 @MainActor
 class UserStateViewModel: ObservableObject {
     
+    @Published var UserDetail: [String: String] = [:]
     
     @Published var isLoggedIn = false
     @Published var isBusy = false
@@ -30,6 +33,7 @@ class UserStateViewModel: ObservableObject {
         userToken = UserDefaults.standard.string(forKey: "userToken") ?? "N/A"
 //        FirebaseApp.configure()
     }
+    
     
     func register(email : String, password: String, confirmPassword : String) async -> Result<Bool, UserRegisterError> {
         
@@ -45,7 +49,12 @@ class UserStateViewModel: ObservableObject {
                 } else {
                     
                     self.isLoggedIn = true
-                    UserDefaults.standard.set("User_is_logged_in", forKey: "userToken")
+//                    UserDefaults.standard.set(data, forKey: "firebase_user_data")
+                    UserDetail["email"] = data?.user.value(forKey:"email" ) as? String
+                    UserDetail["id"] = data?.user.value(forKey:"uid" ) as? String
+                    UserDetail["name"] = (data?.user.displayName ?? "") as? String
+                    
+                    UserDefaults.standard.set(data?.user.uid, forKey: "userToken")
                     
                 }
               }
@@ -69,9 +78,16 @@ class UserStateViewModel: ObservableObject {
                    
                } else {
                    
+                   
                    self.isLoggedIn = true
                    self.isBusy = false
-                   UserDefaults.standard.set("User_is_logged_in", forKey: "userToken")
+                   
+//                   UserDefaults.standard.set(data, forKey: "firebase_user_data")
+                   UserDetail["email"] = data?.user.value(forKey:"email" ) as? String
+                   UserDetail["id"] = data?.user.value(forKey:"uid" ) as? String
+                   UserDetail["name"] = (data?.user.displayName ?? "") as? String
+                   
+                   UserDefaults.standard.set(data?.user.uid, forKey: "userToken")
                    
                }
              }

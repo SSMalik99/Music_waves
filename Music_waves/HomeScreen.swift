@@ -9,6 +9,12 @@ import SwiftUI
 
 struct HomeScreen: View {
     
+    /**
+     model
+     viewmodel
+     view
+     
+     */
     @EnvironmentObject var vm: UserStateViewModel
     
     var body: some View {
@@ -26,7 +32,7 @@ struct HomeScreen: View {
                         Text("Home")
                     }
              
-                Text("Profile Tab")
+                ProfileScreen()
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .tabItem {
                         Image(systemName: "person.crop.circle")

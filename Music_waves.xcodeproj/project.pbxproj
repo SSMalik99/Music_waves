@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD82A97729DD09850081960D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97629DD09850081960D /* ProfileScreen.swift */; };
 		AD8CE0D629D9132400E37E07 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */; };
 		AD8CE0D829D916CA00E37E07 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8CE0D729D916CA00E37E07 /* MainScreen.swift */; };
 		AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD82A97629DD09850081960D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		AD8CE0D729D916CA00E37E07 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateViewModel.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				AD91490629D0E72000A7B78C /* HomeScreen.swift */,
 				ADE5BC1629DA51B300305455 /* GoogleService-Info.plist */,
 				AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */,
+				AD82A97629DD09850081960D /* ProfileScreen.swift */,
 				AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */,
 				ADD4671529C54BD700717EDF /* Assets.xcassets */,
 				ADD4671729C54BD700717EDF /* Preview Content */,
@@ -294,6 +297,7 @@
 				AD8CE0D829D916CA00E37E07 /* MainScreen.swift in Sources */,
 				AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */,
 				AD91490329D0DC4300A7B78C /* ApplicationSwitcher.swift in Sources */,
+				AD82A97729DD09850081960D /* ProfileScreen.swift in Sources */,
 				AD91490729D0E72000A7B78C /* HomeScreen.swift in Sources */,
 				AD8CE0D629D9132400E37E07 /* RegisterScreen.swift in Sources */,
 				ADD4671229C54BD400717EDF /* Music_wavesApp.swift in Sources */,
