@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AD82A97729DD09850081960D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97629DD09850081960D /* ProfileScreen.swift */; };
+		AD82A97929DD0DF70081960D /* NavigationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97829DD0DF70081960D /* NavigationScreen.swift */; };
+		AD82A97B29DD0E6D0081960D /* MotivationVideoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97A29DD0E6D0081960D /* MotivationVideoScreen.swift */; };
+		AD82A97D29DD0E7F0081960D /* MeditationMusicScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97C29DD0E7F0081960D /* MeditationMusicScreen.swift */; };
+		AD82A97F29DD0EC20081960D /* LiveChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97E29DD0EC20081960D /* LiveChatScreen.swift */; };
 		AD8CE0D629D9132400E37E07 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */; };
 		AD8CE0D829D916CA00E37E07 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8CE0D729D916CA00E37E07 /* MainScreen.swift */; };
 		AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */; };
@@ -45,6 +49,10 @@
 
 /* Begin PBXFileReference section */
 		AD82A97629DD09850081960D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		AD82A97829DD0DF70081960D /* NavigationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScreen.swift; sourceTree = "<group>"; };
+		AD82A97A29DD0E6D0081960D /* MotivationVideoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationVideoScreen.swift; sourceTree = "<group>"; };
+		AD82A97C29DD0E7F0081960D /* MeditationMusicScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationMusicScreen.swift; sourceTree = "<group>"; };
+		AD82A97E29DD0EC20081960D /* LiveChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveChatScreen.swift; sourceTree = "<group>"; };
 		AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		AD8CE0D729D916CA00E37E07 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateViewModel.swift; sourceTree = "<group>"; };
@@ -117,6 +125,10 @@
 				ADD4671129C54BD400717EDF /* Music_wavesApp.swift */,
 				AD91490429D0E6DA00A7B78C /* LoginScreen.swift */,
 				AD91490629D0E72000A7B78C /* HomeScreen.swift */,
+				AD82A97829DD0DF70081960D /* NavigationScreen.swift */,
+				AD82A97C29DD0E7F0081960D /* MeditationMusicScreen.swift */,
+				AD82A97E29DD0EC20081960D /* LiveChatScreen.swift */,
+				AD82A97A29DD0E6D0081960D /* MotivationVideoScreen.swift */,
 				ADE5BC1629DA51B300305455 /* GoogleService-Info.plist */,
 				AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */,
 				AD82A97629DD09850081960D /* ProfileScreen.swift */,
@@ -296,10 +308,14 @@
 				ADE5BC1E29DA69DD00305455 /* LaunchScreen.swift in Sources */,
 				AD8CE0D829D916CA00E37E07 /* MainScreen.swift in Sources */,
 				AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */,
+				AD82A97929DD0DF70081960D /* NavigationScreen.swift in Sources */,
 				AD91490329D0DC4300A7B78C /* ApplicationSwitcher.swift in Sources */,
+				AD82A97D29DD0E7F0081960D /* MeditationMusicScreen.swift in Sources */,
 				AD82A97729DD09850081960D /* ProfileScreen.swift in Sources */,
 				AD91490729D0E72000A7B78C /* HomeScreen.swift in Sources */,
+				AD82A97B29DD0E6D0081960D /* MotivationVideoScreen.swift in Sources */,
 				AD8CE0D629D9132400E37E07 /* RegisterScreen.swift in Sources */,
+				AD82A97F29DD0EC20081960D /* LiveChatScreen.swift in Sources */,
 				ADD4671229C54BD400717EDF /* Music_wavesApp.swift in Sources */,
 				AD91490529D0E6DA00A7B78C /* LoginScreen.swift in Sources */,
 			);

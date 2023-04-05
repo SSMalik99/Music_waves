@@ -25,7 +25,7 @@ struct HomeScreen: View {
         }else{
             
             TabView {
-                Text("Home Tab")
+                NavigationScreen()
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .tabItem {
                         Image(systemName: "house.fill")
