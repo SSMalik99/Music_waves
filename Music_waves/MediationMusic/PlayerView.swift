@@ -79,13 +79,18 @@ struct PlayerView: View {
                 
                 HStack{
                     
+                    
                     //MARK: Repeat Button
-                    PlayBackControlButton(systemName:"repeat"){}
+                    PlayBackControlButton(systemName:"repeat", color: audioManger.isLooping ? .teal : .white){
+                        audioManger.toggleLoop()
+                    }
                     
                     Spacer()
                     
                     //MARK: Backword Button
-                    PlayBackControlButton(systemName:"gobackward.10"){}
+                    PlayBackControlButton(systemName:"gobackward.10"){
+                        player.currentTime -= 10
+                    }
                     
                     Spacer()
                     
@@ -97,7 +102,9 @@ struct PlayerView: View {
                     Spacer()
                     
                     //MARK: forwar button
-                    PlayBackControlButton(systemName:"goforward.10"){}
+                    PlayBackControlButton(systemName:"goforward.10"){
+                        player.currentTime += 10
+                    }
                     
                     Spacer()
                     
@@ -128,7 +135,7 @@ struct PlayerView: View {
 
 struct PlayerView_Previews: PreviewProvider {
     
-    static let meditaitonVM = MeditationViewModel(meditaiton: Meditation.data)
+    static let meditaitonVM = MeditationViewModel(meditaiton: MeditationStruct.data[0])
     static var previews: some View {
         PlayerView(meditationVM: meditaitonVM).environmentObject(AudioManager())
     }

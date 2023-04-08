@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD5118C529E19C5D00862FBD /* MeditationMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5118C429E19C5C00862FBD /* MeditationMusicModel.swift */; };
+		AD5118C729E19DFE00862FBD /* MeditationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5118C629E19DFE00862FBD /* MeditationListView.swift */; };
+		AD5118C929E1B10B00862FBD /* meditation5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD5118C829E1B10B00862FBD /* meditation5.mp3 */; };
+		AD5118CB29E1B15E00862FBD /* meditation6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD5118CA29E1B15E00862FBD /* meditation6.mp3 */; };
+		AD5118CD29E1B6AB00862FBD /* meditation7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD5118CC29E1B6AA00862FBD /* meditation7.mp3 */; };
+		AD5118D529E1D73C00862FBD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5118D429E1D73C00862FBD /* WidgetKit.framework */; };
+		AD5118D729E1D73C00862FBD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5118D629E1D73C00862FBD /* SwiftUI.framework */; };
+		AD5118E329E1D73E00862FBD /* MusicWaveExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD5118D229E1D73C00862FBD /* MusicWaveExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AD82A97729DD09850081960D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97629DD09850081960D /* ProfileScreen.swift */; };
 		AD82A97929DD0DF70081960D /* NavigationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97829DD0DF70081960D /* NavigationScreen.swift */; };
 		AD82A97B29DD0E6D0081960D /* MotivationVideoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97A29DD0E6D0081960D /* MotivationVideoScreen.swift */; };
@@ -20,6 +28,9 @@
 		AD8D31CD29E0C47800BD5AF0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D31CC29E0C47800BD5AF0 /* Extensions.swift */; };
 		AD8D31CF29E0C8B500BD5AF0 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D31CE29E0C8B500BD5AF0 /* AudioManager.swift */; };
 		AD8D31D229E0CD4500BD5AF0 /* meditation1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD8D31D129E0CD4500BD5AF0 /* meditation1.mp3 */; };
+		AD8D31D529E0FBF900BD5AF0 /* meditation2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD8D31D429E0FBF900BD5AF0 /* meditation2.mp3 */; };
+		AD8D31D729E0FC0100BD5AF0 /* meditation3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD8D31D629E0FC0100BD5AF0 /* meditation3.mp3 */; };
+		AD8D31D929E0FC1100BD5AF0 /* meditation4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD8D31D829E0FC1100BD5AF0 /* meditation4.mp3 */; };
 		AD91490129D0DBD100A7B78C /* UserStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */; };
 		AD91490329D0DC4300A7B78C /* ApplicationSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */; };
 		AD91490529D0E6DA00A7B78C /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91490429D0E6DA00A7B78C /* LoginScreen.swift */; };
@@ -37,6 +48,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AD5118E129E1D73E00862FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADD4670629C54BD400717EDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD5118D129E1D73C00862FBD;
+			remoteInfo = MusicWaveExtension;
+		};
 		ADD4671F29C54BD700717EDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADD4670629C54BD400717EDF /* Project object */;
@@ -53,7 +71,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AD5118E729E1D73E00862FBD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AD5118E329E1D73E00862FBD /* MusicWaveExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AD5118C429E19C5C00862FBD /* MeditationMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationMusicModel.swift; sourceTree = "<group>"; };
+		AD5118C629E19DFE00862FBD /* MeditationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationListView.swift; sourceTree = "<group>"; };
+		AD5118C829E1B10B00862FBD /* meditation5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation5.mp3; sourceTree = "<group>"; };
+		AD5118CA29E1B15E00862FBD /* meditation6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation6.mp3; sourceTree = "<group>"; };
+		AD5118CC29E1B6AA00862FBD /* meditation7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation7.mp3; sourceTree = "<group>"; };
+		AD5118D229E1D73C00862FBD /* MusicWaveExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MusicWaveExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5118D429E1D73C00862FBD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		AD5118D629E1D73C00862FBD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		AD82A97629DD09850081960D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		AD82A97829DD0DF70081960D /* NavigationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScreen.swift; sourceTree = "<group>"; };
 		AD82A97A29DD0E6D0081960D /* MotivationVideoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationVideoScreen.swift; sourceTree = "<group>"; };
@@ -68,6 +108,9 @@
 		AD8D31CE29E0C8B500BD5AF0 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		AD8D31D129E0CD4500BD5AF0 /* meditation1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation1.mp3; sourceTree = "<group>"; };
 		AD8D31D329E0CDC400BD5AF0 /* Music-waves-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Music-waves-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AD8D31D429E0FBF900BD5AF0 /* meditation2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation2.mp3; sourceTree = "<group>"; };
+		AD8D31D629E0FC0100BD5AF0 /* meditation3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation3.mp3; sourceTree = "<group>"; };
+		AD8D31D829E0FC1100BD5AF0 /* meditation4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation4.mp3; sourceTree = "<group>"; };
 		AD91490029D0DBD100A7B78C /* UserStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateViewModel.swift; sourceTree = "<group>"; };
 		AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSwitcher.swift; sourceTree = "<group>"; };
 		AD91490429D0E6DA00A7B78C /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -86,6 +129,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AD5118CF29E1D73C00862FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5118D729E1D73C00862FBD /* SwiftUI.framework in Frameworks */,
+				AD5118D529E1D73C00862FBD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADD4670B29C54BD400717EDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,6 +164,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD5118D329E1D73C00862FBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD5118D429E1D73C00862FBD /* WidgetKit.framework */,
+				AD5118D629E1D73C00862FBD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD8D31C329E0AF3200BD5AF0 /* MediationMusic */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +180,8 @@
 				AD8D31C829E0BC7200BD5AF0 /* PlayBackControlButton.swift */,
 				AD8D31C629E0AF8C00BD5AF0 /* PlayerView.swift */,
 				AD8D31CA29E0C0F500BD5AF0 /* MeditationViewModel.swift */,
+				AD5118C429E19C5C00862FBD /* MeditationMusicModel.swift */,
+				AD5118C629E19DFE00862FBD /* MeditationListView.swift */,
 			);
 			path = MediationMusic;
 			sourceTree = "<group>";
@@ -129,6 +192,7 @@
 				ADD4671029C54BD400717EDF /* Music_waves */,
 				ADD4672129C54BD700717EDF /* Music_wavesTests */,
 				ADD4672B29C54BD700717EDF /* Music_wavesUITests */,
+				AD5118D329E1D73C00862FBD /* Frameworks */,
 				ADD4670F29C54BD400717EDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,6 +203,7 @@
 				ADD4670E29C54BD400717EDF /* Music_waves.app */,
 				ADD4671E29C54BD700717EDF /* Music_wavesTests.xctest */,
 				ADD4672829C54BD700717EDF /* Music_wavesUITests.xctest */,
+				AD5118D229E1D73C00862FBD /* MusicWaveExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +226,12 @@
 				AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */,
 				ADD4671529C54BD700717EDF /* Assets.xcassets */,
 				AD8D31D129E0CD4500BD5AF0 /* meditation1.mp3 */,
+				AD8D31D429E0FBF900BD5AF0 /* meditation2.mp3 */,
+				AD8D31D629E0FC0100BD5AF0 /* meditation3.mp3 */,
+				AD8D31D829E0FC1100BD5AF0 /* meditation4.mp3 */,
+				AD5118CC29E1B6AA00862FBD /* meditation7.mp3 */,
+				AD5118C829E1B10B00862FBD /* meditation5.mp3 */,
+				AD5118CA29E1B15E00862FBD /* meditation6.mp3 */,
 				ADD4671729C54BD700717EDF /* Preview Content */,
 				AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */,
 				AD8CE0D729D916CA00E37E07 /* MainScreen.swift */,
@@ -198,6 +269,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AD5118D129E1D73C00862FBD /* MusicWaveExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD5118E429E1D73E00862FBD /* Build configuration list for PBXNativeTarget "MusicWaveExtension" */;
+			buildPhases = (
+				AD5118CE29E1D73C00862FBD /* Sources */,
+				AD5118CF29E1D73C00862FBD /* Frameworks */,
+				AD5118D029E1D73C00862FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicWaveExtension;
+			productName = MusicWaveExtension;
+			productReference = AD5118D229E1D73C00862FBD /* MusicWaveExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		ADD4670D29C54BD400717EDF /* Music_waves */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADD4673229C54BD700717EDF /* Build configuration list for PBXNativeTarget "Music_waves" */;
@@ -205,10 +293,12 @@
 				ADD4670A29C54BD400717EDF /* Sources */,
 				ADD4670B29C54BD400717EDF /* Frameworks */,
 				ADD4670C29C54BD400717EDF /* Resources */,
+				AD5118E729E1D73E00862FBD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AD5118E229E1D73E00862FBD /* PBXTargetDependency */,
 			);
 			name = Music_waves;
 			packageProductDependencies = (
@@ -265,6 +355,9 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					AD5118D129E1D73C00862FBD = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					ADD4670D29C54BD400717EDF = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -297,17 +390,31 @@
 				ADD4670D29C54BD400717EDF /* Music_waves */,
 				ADD4671D29C54BD700717EDF /* Music_wavesTests */,
 				ADD4672729C54BD700717EDF /* Music_wavesUITests */,
+				AD5118D129E1D73C00862FBD /* MusicWaveExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AD5118D029E1D73C00862FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADD4670C29C54BD400717EDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5118CB29E1B15E00862FBD /* meditation6.mp3 in Resources */,
+				AD5118C929E1B10B00862FBD /* meditation5.mp3 in Resources */,
+				AD5118CD29E1B6AB00862FBD /* meditation7.mp3 in Resources */,
+				AD8D31D729E0FC0100BD5AF0 /* meditation3.mp3 in Resources */,
 				AD8D31D229E0CD4500BD5AF0 /* meditation1.mp3 in Resources */,
+				AD8D31D929E0FC1100BD5AF0 /* meditation4.mp3 in Resources */,
 				ADD4671929C54BD700717EDF /* Preview Assets.xcassets in Resources */,
+				AD8D31D529E0FBF900BD5AF0 /* meditation2.mp3 in Resources */,
 				ADD4671629C54BD700717EDF /* Assets.xcassets in Resources */,
 				ADE5BC1729DA51B300305455 /* GoogleService-Info.plist in Resources */,
 			);
@@ -330,6 +437,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AD5118CE29E1D73C00862FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADD4670A29C54BD400717EDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,9 +460,11 @@
 				AD91490729D0E72000A7B78C /* HomeScreen.swift in Sources */,
 				AD82A97B29DD0E6D0081960D /* MotivationVideoScreen.swift in Sources */,
 				AD8D31C729E0AF8C00BD5AF0 /* PlayerView.swift in Sources */,
+				AD5118C729E19DFE00862FBD /* MeditationListView.swift in Sources */,
 				AD8CE0D629D9132400E37E07 /* RegisterScreen.swift in Sources */,
 				AD82A97F29DD0EC20081960D /* LiveChatScreen.swift in Sources */,
 				ADD4671229C54BD400717EDF /* Music_wavesApp.swift in Sources */,
+				AD5118C529E19C5D00862FBD /* MeditationMusicModel.swift in Sources */,
 				AD8D31CD29E0C47800BD5AF0 /* Extensions.swift in Sources */,
 				AD8D31CB29E0C0F500BD5AF0 /* MeditationViewModel.swift in Sources */,
 				AD91490529D0E6DA00A7B78C /* LoginScreen.swift in Sources */,
@@ -375,6 +491,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AD5118E229E1D73E00862FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD5118D129E1D73C00862FBD /* MusicWaveExtension */;
+			targetProxy = AD5118E129E1D73E00862FBD /* PBXContainerItemProxy */;
+		};
 		ADD4672029C54BD700717EDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ADD4670D29C54BD400717EDF /* Music_waves */;
@@ -388,6 +509,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AD5118E529E1D73E00862FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77MS74BG3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicWave/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MusicWave;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.georgian.saravjeetsingh.Music-waves.MusicWave";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD5118E629E1D73E00862FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77MS74BG3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicWave/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MusicWave;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.georgian.saravjeetsingh.Music-waves.MusicWave";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		ADD4673029C54BD700717EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -514,6 +689,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Music-waves-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Music Wave";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -544,6 +721,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Music-waves-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Music Wave";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -641,6 +820,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AD5118E429E1D73E00862FBD /* Build configuration list for PBXNativeTarget "MusicWaveExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5118E529E1D73E00862FBD /* Debug */,
+				AD5118E629E1D73E00862FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ADD4670929C54BD400717EDF /* Build configuration list for PBXProject "Music_waves" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
