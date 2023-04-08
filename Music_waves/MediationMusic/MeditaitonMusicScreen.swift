@@ -18,7 +18,7 @@ struct MeditationMusicScreen: View {
             Image(meditationVM.meditation.image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/3, alignment: .center)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/2, alignment: .center)
               
             
             //MARK: Music Detail
@@ -27,14 +27,14 @@ struct MeditationMusicScreen: View {
                 Color(red: 24/255, green: 23/255, blue: 22/255)
                 
                 VStack(alignment: .leading, spacing: 24) {
-                    VStack(alignment: .leading, spacing: 24) {
+                    
+                    VStack(alignment: .leading, spacing: 25) {
                         //MARK: Type and duration
                         Text("Music")
                         Text( DateComponentsFormatter.abbreviated.string(from: meditationVM.meditation.duration) ?? meditationVM.meditation.duration.formatted() + "S")
                     }
                     .font(.subheadline)
                     .textCase(.uppercase)
-                    .opacity(0.7)
                     
                     // mark title
                     Text(meditationVM.meditation.title).font(.title)
@@ -59,17 +59,20 @@ struct MeditationMusicScreen: View {
                     Spacer()
                 }.foregroundColor(.white)
             }
-            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/3, alignment: .center)
-        }.navigationBarHidden(true)
-            .fullScreenCover(isPresented: $showPlayer) {
-                PlayerView(meditationVM: self.meditationVM)
-            }
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
+        }
+        .ignoresSafeArea()
+        .navigationBarBackButtonHidden(false)
+        .navigationBarHidden(false)
+        .fullScreenCover(isPresented: $showPlayer) {
+            PlayerView(meditationVM: self.meditationVM)
+        }
     }
 }
 
 struct MeditationMusicScreen_Previews: PreviewProvider {
     
-    static let meditaitonVM = MeditationViewModel(meditaiton: Meditation.data)
+    static let meditaitonVM = MeditationViewModel(meditaiton: MeditationStruct.data[0])
     
     static var previews: some View {
         MeditationMusicScreen(meditationVM: meditaitonVM).environmentObject(AudioManager())

@@ -50,7 +50,7 @@ class UserStateViewModel: ObservableObject {
                     
                     self.isLoggedIn = true
 //                    UserDefaults.standard.set(data, forKey: "firebase_user_data")
-                    
+                    UserDefaults.standard.set(data?.user.metadata.creationDate, forKey: "UserCreationTime")
                     UserDefaults.standard.set(String(data?.user.email ?? "N/A"), forKey: "userEmail")
                     UserDefaults.standard.set(String(data?.user.displayName ??  "N/A"), forKey: "userName")
                     UserDefaults.standard.set(String(data?.user.uid ?? "N/A") , forKey: "userId")
@@ -85,6 +85,7 @@ class UserStateViewModel: ObservableObject {
                    
 //                   UserDefaults.standard.set(data, forKey: "firebase_user_data")
                    UserDefaults.standard.set(String(data?.user.email ?? "N/A"), forKey: "userEmail")
+                   UserDefaults.standard.set(data?.user.metadata.creationDate, forKey: "UserCreationTime")
                    UserDefaults.standard.set(String(data?.user.displayName ??  "N/A"), forKey: "userName")
                    UserDefaults.standard.set(String(data?.user.uid ?? "N/A") , forKey: "userId")
                    
@@ -118,6 +119,10 @@ class UserStateViewModel: ObservableObject {
         userDetail["email"] = UserDefaults.standard.string(forKey: "userEmail")
         userDetail["name"] = UserDefaults.standard.string(forKey: "userName")
         userDetail["id"] = UserDefaults.standard.string(forKey: "userId")
+        userDetail["userCreationTime"] = UserDefaults.standard.string(forKey: "UserCreationTime")
+        
+        print(UserDefaults.standard.string(forKey: "UserCreationTime") ?? "N/A")
+        
         
         return userDetail;
     }

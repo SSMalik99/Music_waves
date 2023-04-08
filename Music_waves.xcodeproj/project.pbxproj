@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD47D7D129E1F11400963241 /* meditation2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD47D7D029E1F11400963241 /* meditation2.mp3 */; };
+		AD47D7D329E1F11E00963241 /* meditation3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD47D7D229E1F11E00963241 /* meditation3.mp3 */; };
+		AD47D7D529E1F12300963241 /* meditation4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD47D7D429E1F12300963241 /* meditation4.mp3 */; };
+		AD47D7D829E1F12F00963241 /* meditation5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD47D7D629E1F12F00963241 /* meditation5.mp3 */; };
+		AD47D7D929E1F12F00963241 /* meditation6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD47D7D729E1F12F00963241 /* meditation6.mp3 */; };
+		AD47D7DB29E1F13700963241 /* meditation7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD47D7DA29E1F13700963241 /* meditation7.mp3 */; };
+		AD47D7DD29E1F19B00963241 /* MeditationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47D7DC29E1F19B00963241 /* MeditationListView.swift */; };
+		AD47D7DF29E1F1FE00963241 /* MeditationMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47D7DE29E1F1FE00963241 /* MeditationMusicModel.swift */; };
 		AD82A97729DD09850081960D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97629DD09850081960D /* ProfileScreen.swift */; };
 		AD82A97929DD0DF70081960D /* NavigationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97829DD0DF70081960D /* NavigationScreen.swift */; };
 		AD82A97B29DD0E6D0081960D /* MotivationVideoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82A97A29DD0E6D0081960D /* MotivationVideoScreen.swift */; };
@@ -54,6 +62,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD47D7D029E1F11400963241 /* meditation2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation2.mp3; sourceTree = "<group>"; };
+		AD47D7D229E1F11E00963241 /* meditation3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation3.mp3; sourceTree = "<group>"; };
+		AD47D7D429E1F12300963241 /* meditation4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation4.mp3; sourceTree = "<group>"; };
+		AD47D7D629E1F12F00963241 /* meditation5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation5.mp3; sourceTree = "<group>"; };
+		AD47D7D729E1F12F00963241 /* meditation6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation6.mp3; sourceTree = "<group>"; };
+		AD47D7DA29E1F13700963241 /* meditation7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation7.mp3; sourceTree = "<group>"; };
+		AD47D7DC29E1F19B00963241 /* MeditationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationListView.swift; sourceTree = "<group>"; };
+		AD47D7DE29E1F1FE00963241 /* MeditationMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationMusicModel.swift; sourceTree = "<group>"; };
 		AD82A97629DD09850081960D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		AD82A97829DD0DF70081960D /* NavigationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScreen.swift; sourceTree = "<group>"; };
 		AD82A97A29DD0E6D0081960D /* MotivationVideoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationVideoScreen.swift; sourceTree = "<group>"; };
@@ -116,7 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				AD8D31C429E0AF4D00BD5AF0 /* MeditaitonMusicScreen.swift */,
+				AD47D7DC29E1F19B00963241 /* MeditationListView.swift */,
 				AD8D31C829E0BC7200BD5AF0 /* PlayBackControlButton.swift */,
+				AD47D7DE29E1F1FE00963241 /* MeditationMusicModel.swift */,
 				AD8D31C629E0AF8C00BD5AF0 /* PlayerView.swift */,
 				AD8D31CA29E0C0F500BD5AF0 /* MeditationViewModel.swift */,
 			);
@@ -161,6 +179,12 @@
 				AD91490229D0DC4300A7B78C /* ApplicationSwitcher.swift */,
 				ADD4671529C54BD700717EDF /* Assets.xcassets */,
 				AD8D31D129E0CD4500BD5AF0 /* meditation1.mp3 */,
+				AD47D7D029E1F11400963241 /* meditation2.mp3 */,
+				AD47D7D629E1F12F00963241 /* meditation5.mp3 */,
+				AD47D7DA29E1F13700963241 /* meditation7.mp3 */,
+				AD47D7D729E1F12F00963241 /* meditation6.mp3 */,
+				AD47D7D429E1F12300963241 /* meditation4.mp3 */,
+				AD47D7D229E1F11E00963241 /* meditation3.mp3 */,
 				ADD4671729C54BD700717EDF /* Preview Content */,
 				AD8CE0D529D9132400E37E07 /* RegisterScreen.swift */,
 				AD8CE0D729D916CA00E37E07 /* MainScreen.swift */,
@@ -306,8 +330,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD47D7D929E1F12F00963241 /* meditation6.mp3 in Resources */,
+				AD47D7D829E1F12F00963241 /* meditation5.mp3 in Resources */,
+				AD47D7DB29E1F13700963241 /* meditation7.mp3 in Resources */,
+				AD47D7D329E1F11E00963241 /* meditation3.mp3 in Resources */,
 				AD8D31D229E0CD4500BD5AF0 /* meditation1.mp3 in Resources */,
+				AD47D7D529E1F12300963241 /* meditation4.mp3 in Resources */,
 				ADD4671929C54BD700717EDF /* Preview Assets.xcassets in Resources */,
+				AD47D7D129E1F11400963241 /* meditation2.mp3 in Resources */,
 				ADD4671629C54BD700717EDF /* Assets.xcassets in Resources */,
 				ADE5BC1729DA51B300305455 /* GoogleService-Info.plist in Resources */,
 			);
@@ -343,6 +373,7 @@
 				AD8D31CF29E0C8B500BD5AF0 /* AudioManager.swift in Sources */,
 				AD91490329D0DC4300A7B78C /* ApplicationSwitcher.swift in Sources */,
 				AD82A97729DD09850081960D /* ProfileScreen.swift in Sources */,
+				AD47D7DD29E1F19B00963241 /* MeditationListView.swift in Sources */,
 				AD91490729D0E72000A7B78C /* HomeScreen.swift in Sources */,
 				AD82A97B29DD0E6D0081960D /* MotivationVideoScreen.swift in Sources */,
 				AD8D31C729E0AF8C00BD5AF0 /* PlayerView.swift in Sources */,
@@ -350,6 +381,7 @@
 				AD82A97F29DD0EC20081960D /* LiveChatScreen.swift in Sources */,
 				ADD4671229C54BD400717EDF /* Music_wavesApp.swift in Sources */,
 				AD8D31CD29E0C47800BD5AF0 /* Extensions.swift in Sources */,
+				AD47D7DF29E1F1FE00963241 /* MeditationMusicModel.swift in Sources */,
 				AD8D31CB29E0C0F500BD5AF0 /* MeditationViewModel.swift in Sources */,
 				AD91490529D0E6DA00A7B78C /* LoginScreen.swift in Sources */,
 			);
