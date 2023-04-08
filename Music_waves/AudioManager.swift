@@ -20,8 +20,6 @@ final class AudioManager : ObservableObject {
         }
     }
     
-    @Published private(set) var isLooping : Bool = false
-    
     func startPlayer (track : String ) {
         guard let url = Bundle.main.url(forResource: track, withExtension: "mp3") else {
             print("Resource not found: \(track)")
@@ -60,19 +58,7 @@ final class AudioManager : ObservableObject {
             return
         }
         if player.isPlaying {
-            player.stop()
             isPlaying = false
         }
-    }
-    
-    func toggleLoop() {
-        guard let player = player else {
-            print("instance of audio player not found")
-            return
-        }
-        
-        player.numberOfLoops = player.numberOfLoops == 0 ? -1 : 0
-        isLooping = player.numberOfLoops != 0
-        print(isLooping);
     }
 }

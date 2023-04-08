@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NavigationScreen: View {
     
-    let meditaitonVM = MeditationViewModel(meditaiton: MeditationStruct.data[3])
+    let meditaitonVM = MeditationViewModel(meditaiton: Meditation.data)
     
     var body: some View {
         VStack (spacing: 30) {

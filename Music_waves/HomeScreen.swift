@@ -25,7 +25,7 @@ struct HomeScreen: View {
         }else{
             
             TabView {
-                MeditationListView()
+                NavigationScreen()
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .tabItem {
                         Image(systemName: "house.fill")
@@ -40,9 +40,9 @@ struct HomeScreen: View {
                     }
              
              
+             
             }
-            .navigationTitle("Music Waves")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Home")
             .toolbar {
                    Button {
                             Task{
