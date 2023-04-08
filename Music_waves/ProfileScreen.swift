@@ -10,9 +10,25 @@ import SwiftUI
 struct ProfileScreen: View {
     @EnvironmentObject var vm: UserStateViewModel
     
+    let userDetail = UserStateViewModel.getUserDetail()
+    
+    
     var body: some View {
         
-        Text("\(vm.UserDetail["email"])" as String)
+        VStack{
+            
+            HStack{
+                Text("Email : ")
+                Text("\(userDetail["email"]!)")
+            }
+            
+            HStack{
+                Text("Name : ")
+                Text("\(userDetail["name"]!)")
+            }
+            
+        }
+        
     }
 }
 

@@ -8,22 +8,26 @@
 import SwiftUI
 
 struct NavigationScreen: View {
+    
+    let meditaitonVM = MeditationViewModel(meditaiton: Meditation.data)
+    
     var body: some View {
-        VStack (spacing: 100) {
-            
-            NavigationLink(destination: MeditationMusicScreen()) {
-                Text("Meditation Music >")
-            }
-            
-            
-            NavigationLink(destination: MotivationVideoScreen()) {
-                Text("Motivational Video >")
-            }
-            
-            
-            NavigationLink(destination: LiveChatScreen()) {
-                Text("Live Chat >")
-            }
+        VStack (spacing: 30) {
+            MeditationMusicScreen(meditationVM: self.meditaitonVM)
+//
+//            NavigationLink(destination: MeditationMusicScreen()) {
+//                Text("Meditation Music >")
+//            }
+//
+//
+//            NavigationLink(destination: MotivationVideoScreen()) {
+//                Text("Motivational Video >")
+//            }
+//
+//
+//            NavigationLink(destination: LiveChatScreen()) {
+//                Text("Live Chat >")
+//            }
 
             
         }

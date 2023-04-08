@@ -50,11 +50,12 @@ class UserStateViewModel: ObservableObject {
                     
                     self.isLoggedIn = true
 //                    UserDefaults.standard.set(data, forKey: "firebase_user_data")
-                    UserDetail["email"] = data?.user.value(forKey:"email" ) as? String
-                    UserDetail["id"] = data?.user.value(forKey:"uid" ) as? String
-                    UserDetail["name"] = (data?.user.displayName ?? "") as? String
                     
-                    UserDefaults.standard.set(data?.user.uid, forKey: "userToken")
+                    UserDefaults.standard.set(String(data?.user.email ?? "N/A"), forKey: "userEmail")
+                    UserDefaults.standard.set(String(data?.user.displayName ??  "N/A"), forKey: "userName")
+                    UserDefaults.standard.set(String(data?.user.uid ?? "N/A") , forKey: "userId")
+                    
+                    UserDefaults.standard.set(String(data?.user.uid ?? "N/A"), forKey: "userToken")
                     
                 }
               }
@@ -83,11 +84,12 @@ class UserStateViewModel: ObservableObject {
                    self.isBusy = false
                    
 //                   UserDefaults.standard.set(data, forKey: "firebase_user_data")
-                   UserDetail["email"] = data?.user.value(forKey:"email" ) as? String
-                   UserDetail["id"] = data?.user.value(forKey:"uid" ) as? String
-                   UserDetail["name"] = (data?.user.displayName ?? "") as? String
+                   UserDefaults.standard.set(String(data?.user.email ?? "N/A"), forKey: "userEmail")
+                   UserDefaults.standard.set(String(data?.user.displayName ??  "N/A"), forKey: "userName")
+                   UserDefaults.standard.set(String(data?.user.uid ?? "N/A") , forKey: "userId")
                    
-                   UserDefaults.standard.set(data?.user.uid, forKey: "userToken")
+                   UserDefaults.standard.set(String(data?.user.uid ?? "N/A"), forKey: "userToken")
+                   
                    
                }
              }
@@ -108,6 +110,16 @@ class UserStateViewModel: ObservableObject {
             isBusy = false
             return .failure(.signOutError)
         }
+    }
+    
+    static func getUserDetail() -> [String: String] {
+         var userDetail : [String: String] = [:]
+        
+        userDetail["email"] = UserDefaults.standard.string(forKey: "userEmail")
+        userDetail["name"] = UserDefaults.standard.string(forKey: "userName")
+        userDetail["id"] = UserDefaults.standard.string(forKey: "userId")
+        
+        return userDetail;
     }
     
     

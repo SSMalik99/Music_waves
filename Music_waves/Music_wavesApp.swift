@@ -19,6 +19,7 @@ struct Music_wavesApp: App {
     }
     
     @StateObject var userStateViewModel = UserStateViewModel()
+    @StateObject var audioManger = AudioManager()
     
     
     var body: some Scene {
@@ -28,6 +29,7 @@ struct Music_wavesApp: App {
                 ApplicationSwitcher()
             }
             .environmentObject(userStateViewModel)
+            .environmentObject(audioManger)
             .navigationViewStyle(.stack)
             
             
